@@ -2,7 +2,7 @@
 
 namespace App\Tests\Service;
 
-use App\Service\RandomNumberService;
+use App\Service\RandomNumber\RandomNumberService;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class RandomNumberServiceTest extends KernelTestCase {

@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
-use App\Service\RandomNumberService;
+use App\Service\RandomNumber\RandomNumberService;
 
 class ApiController {
 
