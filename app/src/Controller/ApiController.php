@@ -7,13 +7,25 @@ use App\Service\RandomNumberService;
 
 class ApiController {
 
-	public function randomNumber()
-	{
-        $randomNumberService = new RandomNumberService();
+    /**
+     * @var RandomNumberService
+     */
+    private $randomNumberService;
 
+    /**
+     * @param RandomNumberService $randomNumberService
+     */
+    public function __construct(
+      RandomNumberService $randomNumberService
+    ) {
+        $this->randomNumberService = $randomNumberService;
+    }
+
+    public function randomNumber()
+	{
 		return new JsonResponse([
 			'success' => true,
-			'number' => $randomNumberService->getRandomNumber(),
+			'number' => $this->randomNumberService->getRandomNumber(),
 		]);
 	}
 
