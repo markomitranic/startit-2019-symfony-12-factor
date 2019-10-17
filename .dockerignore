@@ -1,0 +1,4 @@
+app/var/cache
+app/var/logs
+**/.idea
+.git
