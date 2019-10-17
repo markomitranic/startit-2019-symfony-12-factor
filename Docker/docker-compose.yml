@@ -21,6 +21,7 @@ services:
     environment:
       APP_ENV: ${ENV}
       APP_DEBUG: ${SYMFONY_APP_DEBUG}
+      RANDOM_NUMBER_API_URL: ${RANDOM_NUMBER_API_URL}
     command: /entrypoint.sh
     restart: always
     networks:
